@@ -1,6 +1,8 @@
 import './App.css'
 import React from 'react'
 
+import Mega from './components/mega/Mega'
+import Contador from './components/contador/contador'
 import Input from './components/formulario/Input'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 import Diretapai from './components/comunicacao/DiretaPai'
@@ -23,10 +25,16 @@ export default (props) => {
             <h1>Fundamentos React</h1>
 
             <div className="Cards">
-            <Card titulo="#11 - Componente Controlado" color="#E45F56">
-                <Input></Input>
+                <Card titulo="#13 - Mega" color="#B9006E">
+                    <Mega qtde={8}></Mega>
                 </Card>
-            <Card titulo="#10 - Comunicação indireta" color="#8BAD39">
+                <Card titulo="#12 - Contador" color="#424242">
+                    <Contador numeroInicial={20}></Contador>
+                </Card>
+                <Card titulo="#11 - Componente Controlado" color="#E45F56">
+                    <Input></Input>
+                </Card>
+                <Card titulo="#10 - Comunicação indireta" color="#8BAD39">
                     <IndiretaPai></IndiretaPai>
                 </Card>
                 <Card titulo="#09 - Comunicação Direta" color="#59323C">
